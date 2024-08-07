@@ -1,0 +1,114 @@
+set
+await setDoc(doc(db,'city','lhr'),{name:'',province:''})
+get
+const res=await getDoc(doc(db,'city','lhr'))
+red.exists()
+res.data()['key']
+
+const all={
+st:'',
+bol:true,
+num:3.23,
+arr:[1,'hel',true],
+em:null,
+darte:timeStamp.formDate(new Date()),
+obj:{
+a:22,
+nest:{
+nested:'wdsd',
+}}
+
+await setDoc(doc(dc,'cities','id'),all)
+
+
+
+class city{
+constructor(n,s,p)
+{
+this.n=n
+}
+toString(){
+return this.n
+}
+}
+
+const conv={
+toFireStore=(city)=>{
+return {name:city.n}
+},
+fromfirestore:(snapshot,obj)=>{
+const data=snapshot.data(obj)
+rerurn new City(data.n)
+}
+
+
+setDoc(doc(db,'ciity','id').toconbverotr(covnv),new City('name')))
+
+const data=awaitcgetDoc(doc(db,'city','id'))
+data.data()
+
+
+
+const data=addDoc(collection(db,'city'),{key value datat})
+data.id,auto gen id here
+
+updateDoc(doc(),{keyvalue})
+
+setDoc(doc(),{keyvalpair,
+timestamp:ServerTimeStamp()}
+
+updateDoc(doc(),{
+'obj.sas.dsd":}
+
+
+
+const ref=doc(db,'city','lhr')
+
+const await runTransaction(db,async(trans)=>{
+
+const res=trans.get(ref)
+
+trans.update(ref,{pop:res.data().pop+1}
+
+trans.set(ref,{keyvaluepaor})
+
+}
+
+
+
+const batch =writeBatch(db)
+
+batch.set(ref,{})
+batch.update(ref<{}_)
+
+batch.commit()
+
+
+
+
+delecteDoc(doc())
+
+updateDoc(doc(),{fieldname:deleteField()}
+
+const col=collection(db,'city')
+setDoc(doc(col,'id'),{})
+setDoc(doc(col,'id2'),{})
+setDoc(doc(col,'id3'),{})
+setDoc(doc(col,'id4'),{})
+setDoc(doc(col,'id5'),{})
+
+
+res=getdoc(collection(db,'city'))
+res.forEach((doc)=>doc.data()
+
+
+q=query(colection(db,'city'),where('captial','==',true))
+
+res=getDoc(q)
+res.forEach((doc)=>doc.data())
+
+
+
+
+
+
